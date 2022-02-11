@@ -142,6 +142,14 @@ li:active {
     background-image: url(images/gift.svg);
 }
 
+#youtube>span, #twitter>span {
+    background-image: url(images/drop-down.png);
+    background-size: 13px;
+    background-position: bottom 20px right 18px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
 a>svg {
     margin: -10px;
     height: 32px;
