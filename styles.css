@@ -78,7 +78,7 @@ li > a {
     text-decoration: none;
     color: #2B283a;
     padding: 0 50px;
-    height: 100%;
+    height: 56px;
 }
 
 li:hover, #youtube:hover, #twitter:hover {
@@ -193,27 +193,24 @@ iframe {
 }
 
 #tweet {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    width: 90%;
-    height: 100%;
+    display: flex;
+}
+#tweet>div {
+    padding: 0 10px 0 10px;
     margin: 0 auto;
 }
-
 #view-tweet-btn {
-    display: block;
     width: 95%;
     background-color: black;
     color: white;
     border-radius: 10px;
-    height: 50px;
+    height: 48px;
+    vertical-align: middle;
     padding: 0;
     margin: 35px auto 20px auto;
 }
 
-#view-tweet:hover {
+#view-tweet-btn:hover {
     background-color: #1F2D3D;
 }
 
