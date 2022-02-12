@@ -22,14 +22,14 @@ youtubeel.addEventListener("click", () => {
 
 twitterel.addEventListener("click", () => {
     if (twitterOpen === false) {
-        twitterel.innerHTML = `<div>
+        twitterel.innerHTML = `<span>
                                     Twitter OPEN
-                                </div>`
+                                </span>`
         twitterOpen = true
     } else {
-        twitterel.innerHTML = `<div>
+        twitterel.innerHTML = `<span>
                                     Twitter
-                                </div>`
+                                </span>`
         twitterOpen = false
     }
 
