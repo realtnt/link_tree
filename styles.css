@@ -55,7 +55,6 @@ li {
     height: 60px;
     font-size: 16px;
     font-weight: 600;
-    line-height: 56px;
 
     background-position: top 12px left 10px;
     background-size: 35px;
@@ -73,18 +72,21 @@ li {
 }
 
 li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #2B283a;
-    padding: 0;
-    display: block;
+    padding: 0 50px;
+    height: 100%;
 }
 
-li:hover {
+li:hover, #youtube:hover, #twitter:hover {
     transform: translateX(2px) translateY(3px);
     box-shadow: 8px 7px #222;
 }
 
-li:active {
+li:active, #youtube:active, #twitter:active {
     transform: translateX(5px) translateY(6px);
     box-shadow: 5px 4px #222;
 }
@@ -126,6 +128,8 @@ iframe {
 }
 
 #youtube {
+    cursor: pointer;
+    line-height: 60px;
     background-image: url(images/brand-youtube.svg);
 }
 
@@ -146,6 +150,8 @@ iframe {
 }
 
 #twitter {
+    cursor: pointer;
+    line-height: 60px;
     background-image: url(images/brand-twitter.svg);
 }
 
@@ -211,7 +217,7 @@ iframe {
     background-color: #1F2D3D;
 }
 
-.remove-press:hover {
+#youtube.remove-press:hover, #twitter.remove-press:hover {
     transform: none;
     box-shadow: 10px 10px #222;
 }
